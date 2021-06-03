@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #f1f5f6;
+  --white: #fff;
+  --group: #2081c3;
+  --header-font-color: #4a4a4a;
+
+  --user-name: #4a4a4a;
+  --user-role: #4a4a4a;
+  --user-email: #7e7e7e;
+
+  --admin-svg: #2081c3;
+  --user-svg: #68aaab;
+  --viewer-svg: #7e7e7e;
+  --expand-svg: #7e7e7e;
+
+  --detail-header: #4a4a4a;
+  --detail-item: #4a4a4a;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --box-shadow: 1px 6px 4px -4px rgba(0, 0, 0, 0.44);
+}
+* {
+  font-family: "Open sans", sans-serif;
+}
+
+.container {
+  width: 450px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.48);
+}
+
+.header {
+  height: 64px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .group-svg {
+  fill: var(--group);
+}
+
+.header h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--header-font-color);
+  font-weight: var(--font-light);
+}
+
+.userlist-container {
+  margin: 0 16px;
+  overflow: auto;
+}
+
+.user {
+  background-color: var(--white);
+  width: 100%;
+  margin: 16px 0;
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}
+
+.user .user-details-container {
+  margin-left: 15%;
+  width: 100%;
+}
+
+.user-details {
+  padding: 0 10px;
+  margin: 6px;
+}
+
+.user .user-description {
+  flex-basis: 70%;
+}
+
+.user .expand-svg {
+  height: 25px;
+  flex-basis: 15%;
+  fill: var(--expand-svg);
+  margin-bottom: 15px;
+}
+
+.user .user-svg {
+  height: 50px;
+  flex-basis: 15%;
+}
+
+.user .user-svg.Administrator {
+  fill: var(--admin-svg);
+}
+
+.user .user-svg.User {
+  fill: var(--user-svg);
+}
+
+.user .user-svg.Viewer {
+  fill: var(--viewer-svg);
+}
+.user .user-description {
+  margin-right: auto;
+  padding: 0 12px;
+}
+
+.open.user .user-description,
+.open.user .user-svg,
+.open.user .user-expand {
+  margin-bottom: 15px;
+}
+
+.user .user-description .user-name {
+  font-size: 12px;
+  font-weight: var(--font-bold);
+  color: var(--user-name);
+}
+.user .user-description .user-role {
+  font-size: 10px;
+  color: var(--user-role);
+  font-weight: var(--font-regular);
+}
+
+.user .user-description .user-email {
+  font-size: 10px;
+  color: var(--user-email);
+  font-weight: var(--font-light);
+}
+
+.user-details .detail-header {
+  font-size: 10px;
+  font-weight: var(--font-bold);
+  color: var(--detail-header);
+}
+
+.user-details .detail-item {
+  font-size: 10px;
+  color: var(--detail-item);
+  font-weight: var(--font-light);
+}
